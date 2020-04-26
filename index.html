@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Best City Guide</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.min.css">
+</head>
+<body>
+	
+	<header class="main-header">
+		<h1 class="name">
+			<a href="#" >Best City Guide</a>
+		</h1>
+
+		<!-- menu list -->
+		<ul class="main-nav" id="mainNavList">
+			<li><a href="#">ice cream</a></li>
+			<li><a href="#">donuts</a></li>
+			<li><a href="#">tea</a></li>
+			<li><a href="#">coffee</a></li>
+		</ul>
+
+		<!-- hamburger icon -->
+		<input class="menu-btn" type="checkbox" id="menu-btn">
+		<label class="menu-icon" for="menu-btn" id="menu-icon">
+			<span class="navicon"></span>
+		</label>
+	</header><!--/.main-header-->   
+
+	<div class="banner">
+		<h1 class="headline" id="welcome">Welcome to The Best City</h1>
+		<span class="tagline">The best drinks and eats in the best city ever.</span>
+	</div><!--/.banner-->
+	
+	<div class="row">		
+		<div class="primary col" style="width: 50%">
+			<h2>Assignment 1: Function and Array</h2>
+			<img class="feat-img" src="img/treats.svg" alt="Drinks and eats">
+			<p>Complete the function below to find the ​max number​ of passing array of numbers.</p>
+			<p>Reminder:​ you ​cannot​ use built-in Math.max() or sort() to complete this assignment.</p>
+			<p><pre>
+function max(numbers){
+	// your code here, for-loop method preferred
+	let maxNo = 0;
+	for (let i = 0; i > (numbers[i]>maxNo; i += 1) { 
+		if (maxNo < numbers[i]) {
+			maxNo = numbers[i];
+		} else {
+			maxNo = maxNo;
+		}
+	}
+}
+return maxNo;
+
+max([1, 2, 4, 5]);​ // result to 5</pre>
+			</p>
+		</div><!--/.primary-->
+		
+		<div class="secondary col" style="width: 50%">
+			<h2>Assignment 2: Object</h2>
+			<p>Detail: In JavaScript, there are many different sets of syntax for creating objects. In the code below, function parameters are encapsulated into an object, try using at least ​two ways​ to create a proper object as a parameter of the calculate function.</p>
+			<p><pre>
+function calculate(args){ 
+	let result;
+	if(args.op==="+"){ 
+		result=args.n1+args.n2;
+		} else if (args.op==="-"){ 
+			result=args.n1-args.n2;
+		} else {
+	result="Not supported";
+	}
+	return result; 
+
+	// 1st way
+	calculate({"n1":3,"n2":4,"op":"+"}); 
+	
+	// 2nd way
+	class operate { 
+		constructor(n1,n2,op){ 
+			this.n1=n1; this.n2=n2; this.op=op; 
+		} 
+	}
+	let result = new operate(3,4,"+");
+	calculate(result);
+	}
+
+// Try to call calculate function correctly 
+/*
+	For example, if we have an add 
+		function like this: function add(args){
+			return args.n1+args.n2; 
+		}
+	We can call it by passing an object created by JSON literal: 
+		add({n1:3, n2:4}); // your first way
+	You should apply constructor or class as another way to create a proper object. 
+		add(用類別或建構式產生的物件); // your another way
+*/</pre>
+		</div><!--/.secondary-->
+		
+		<div class="third col" style="width: 50%">
+			<h2>Assignment 3: Function, Array, and Object</h2>
+			<p><strong>Detail: </strong>Complete the function below to calculate the average price of all the products.</p>
+			<p><pre>
+function avg(data){
+	// your code here
+	let result;
+	totalNo = data.size;
+	totalPrice = data.products[0].price + 
+				 data.products[1].price + 
+				 data.products[2].price;
+	result = totalPrice / totalNo;
+	return result;
+} 
+
+avg({
+	size:3, products:[
+		{
+			name:"Product 1",
+			price:100 },
+		{
+			name:"Product 2",
+			price:700 },
+		{
+			name:"Product 3",
+			price:250 
+		}
+	]
+});​ // show the average price of all products
+			</pre></p>
+		</div><!--/.third-->	
+
+		<div class="forth col">
+			<h2>How to get here</h2>
+			<p><strong>Plane: </strong>Tiramisu caramels gummies chupa chups lollipop muffin. Jujubes chocolate caramels cheesecake brownie lollipop drag&#233;e cheesecake.</p>
+			<p><strong>Train: </strong>Pie apple pie pudding I love wafer toffee liquorice sesame snaps lemon drops. Lollipop gummi bears dessert muffin I love fruitcake toffee pie.</p>
+			<p><strong>Car: </strong>Jelly cotton candy bonbon jelly-o jelly-o I love. I love sugar plum chocolate cake pie I love pastry liquorice.</p>
+		</div><!--/.forth-->	
+		<a class="button" id="callAction">Learn More</a>
+	</div>
+
+
+	<div class="row" id="more">		
+		<div class="primary col">
+			<h2>Great food</h2>
+			<img class="feat-img" src="img/treats.svg" alt="Drinks and eats">
+			<p>Croissant macaroon pie brownie. Cookie marshmallow liquorice gingerbread caramels toffee I love chocolate. Wafer lollipop dessert. Bonbon jelly beans pudding dessert sugar plum. Marzipan toffee drag&#233;e chocolate bar candy toffee pudding I love. Gummi bears pie gingerbread lollipop.</p>
+		</div><!--/.primary-->
+		
+		<div class="secondary col">
+			<h2>Welcome!</h2>
+			<p>Everything in this city is worth waiting in line for.</p>
+			<p>Cupcake ipsum dolor sit. Amet chocolate cake gummies jelly beans candy bonbon brownie candy. Gingerbread powder muffin. Icing cotton candy. Croissant icing pie ice cream brownie I love cheesecake cookie. Pastry chocolate pastry jelly croissant.</p>
+			<p>Cake sesame snaps sweet tart candy canes tiramisu I love oat cake chocolate bar. Jelly beans pastry brownie sugar plum pastry bear claw tiramisu tootsie roll. Tootsie roll wafer I love chocolate donuts.</p>
+		</div><!--/.secondary-->
+		
+		<div class="third col">
+			<h2>How to get here</h2>
+			<p><strong>Plane: </strong>Tiramisu caramels gummies chupa chups lollipop muffin. Jujubes chocolate caramels cheesecake brownie lollipop drag&#233;e cheesecake.</p>
+			<p><strong>Train: </strong>Pie apple pie pudding I love wafer toffee liquorice sesame snaps lemon drops. Lollipop gummi bears dessert muffin I love fruitcake toffee pie.</p>
+			<p><strong>Car: </strong>Jelly cotton candy bonbon jelly-o jelly-o I love. I love sugar plum chocolate cake pie I love pastry liquorice.</p>
+		</div><!--/.third-->	
+
+		<div class="forth col">
+			<h2>How to get here</h2>
+			<p><strong>Plane: </strong>Tiramisu caramels gummies chupa chups lollipop muffin. Jujubes chocolate caramels cheesecake brownie lollipop drag&#233;e cheesecake.</p>
+			<p><strong>Train: </strong>Pie apple pie pudding I love wafer toffee liquorice sesame snaps lemon drops. Lollipop gummi bears dessert muffin I love fruitcake toffee pie.</p>
+			<p><strong>Car: </strong>Jelly cotton candy bonbon jelly-o jelly-o I love. I love sugar plum chocolate cake pie I love pastry liquorice.</p>
+		</div><!--/.forth-->	
+		
+	</div>
+		
+	
+	<!-- <footer class="main-footer">
+		<span>&copy;2015 Residents of The Best City Ever.</span>
+	</footer> -->
+    <script src="assignment4.js"></script>
+</body>
+</html>
