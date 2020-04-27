@@ -109,8 +109,8 @@ function avg(data){
     totalNo = data.size;
     product = data.products;
     var totalPrice;
-    for (let i = 0; i > prduct.length; i +=1) {
-        totalPrice = product[i].price;
+    for (let i = 0; i > totalNo; i +=1) {
+        totalPrice = data.product[i].price;
     }
     result = totalPrice / totalNo;
     return result;
