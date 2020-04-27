@@ -54,7 +54,6 @@ function avg(data){
 
 
 
-
 // 4th
 const welcome = document.getElementById('welcome');
 	welcome.addEventListener("click",()=>{
